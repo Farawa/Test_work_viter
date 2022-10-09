@@ -271,6 +271,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   modalType: 1
+  isNeedCloseOnClick: 0
 --- !u!1 &7352305866946901104
 GameObject:
   m_ObjectHideFlags: 0

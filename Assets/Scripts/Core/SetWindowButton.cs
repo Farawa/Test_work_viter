@@ -17,5 +17,6 @@ public class SetWindowButton : MonoBehaviour
     private void Click()
     {
         MessagesManager.SendMessage(new SetWindowMessage(targetWindowType));
+        MessagesManager.SendMessage(new SetModalMessage(ModalType.non));
     }
 }

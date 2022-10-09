@@ -84,5 +84,7 @@ public enum ModalType
 {
     win,
     lose,
-    sound
+    sound,
+    wait,
+    non
 }

@@ -14,6 +14,7 @@ public class SoundPanel : MonoBehaviour
     {
         slider.onValueChanged.AddListener(SetVolume);
         UpdateLabel();
+        slider.value = PrefsSaver.GetFloat(SaveKey.musicVolume);
     }
 
     private void SetVolume(float volume)

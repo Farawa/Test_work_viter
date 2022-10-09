@@ -8,11 +8,13 @@ using UnityEngine.UI;
 public class ModalWindow : MonoBehaviour
 {
     [SerializeField] private ModalType modalType;
-    public ModalType ModalType=>modalType;
+    [SerializeField] private bool isNeedCloseOnClick = true;
+    public ModalType ModalType => modalType;
 
     private void Awake()
     {
-        GetComponent<Button>().onClick.AddListener(Close);
+        if (isNeedCloseOnClick)
+            GetComponent<Button>().onClick.AddListener(Close);
     }
 
     public void Close()
