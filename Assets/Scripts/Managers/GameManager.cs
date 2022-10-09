@@ -19,11 +19,15 @@ public class GameManager : MonoBehaviour, ISubscriber
         WindowsManager.SetWindow(WindowType.main);
     }
 
-    public void SetMessage(Message message)
+    public void ListenMessage(Message message)
     {
-        if (message is SetWindowMessage msg)
+        if (message is SetWindowMessage windowMsg)
         {
-            WindowsManager.SetWindow(msg.windowType);
+            WindowsManager.SetWindow(windowMsg.windowType);
+        }
+        else if (message is SetModalMessage modalMsg)
+        {
+            WindowsManager.SetModal(modalMsg.modalType);
         }
     }
 }

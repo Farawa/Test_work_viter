@@ -7,4 +7,6 @@ using UnityEngine;
 public class GameData : ScriptableObject
 {
     public GameObject[] windowPrefabs;
+    public GameObject[] modalWindows;
+    public GameObject elementPrefab;
 }

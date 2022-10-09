@@ -20,7 +20,7 @@ public static class MessagesManager
     {
         foreach(var sub in subscribers)
         {
-            sub.SetMessage(message);
+            sub.ListenMessage(message);
         }
     }
 }

@@ -15,3 +15,8 @@ MonoBehaviour:
   windowPrefabs:
   - {fileID: 6602855420068326678, guid: f7c9d726cc91f5d489927ad0dc834763, type: 3}
   - {fileID: 9024803386445684708, guid: 537feac49886570489d4710a2589c233, type: 3}
+  modalWindows:
+  - {fileID: 7030309994809221857, guid: a49aa47fc6977ea46ad6bd3f0649693e, type: 3}
+  - {fileID: 4231373916841866395, guid: 13763d07a5e860e4cb493e3b235234d5, type: 3}
+  - {fileID: 1574397398677187318, guid: 65171aa6f9245e34fa22c812483ecce5, type: 3}
+  elementPrefab: {fileID: 0}
