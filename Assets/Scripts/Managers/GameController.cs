@@ -60,13 +60,13 @@ public class GameController : MonoBehaviour, ISubscriber
         }
         if (bigCell.element == element) bigCell.element = null;
         if (smallCell.element == element) smallCell.element = null;
-        PlaceElement(element, cell.transform.position);
+        PlaceElement(element, cell.transform.localPosition);
         cell.element = element;
     }
 
     private void PlaceElement(Element element, Vector3 position)
     {
-        element.transform.position = position - (Vector3)((element.transform as RectTransform).sizeDelta / 2);
+        element.transform.localPosition = position;
         element.lastPosition = position;
     }
 
@@ -121,11 +121,6 @@ public class GameController : MonoBehaviour, ISubscriber
 
     private IEnumerator DestroyElements(Action callback)
     {
-        foreach (var elem in elements)
-        {
-            (elem.transform as RectTransform).pivot = Vector2.one / 2;
-            elem.transform.position += (Vector3)((elem.transform as RectTransform).sizeDelta / 2);
-        }
         float scaleValue = 1;
         for (int i = 0; i < 1 / Time.fixedDeltaTime; i++)
         {

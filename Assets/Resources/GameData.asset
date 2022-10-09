@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataWindow
   windowPrefabs:
   - {fileID: 6602855420068326678, guid: f7c9d726cc91f5d489927ad0dc834763, type: 3}
-  - {fileID: 9024803386445684708, guid: 537feac49886570489d4710a2589c233, type: 3}
+  - {fileID: 3006122787883715093, guid: 23eb0f07a250f4e499dddd9fecdcadcb, type: 3}
   modalWindows:
   - {fileID: 7030309994809221857, guid: a49aa47fc6977ea46ad6bd3f0649693e, type: 3}
   - {fileID: 4231373916841866395, guid: 13763d07a5e860e4cb493e3b235234d5, type: 3}
